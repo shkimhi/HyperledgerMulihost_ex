@@ -34,7 +34,7 @@ services:
       - ORDERER_GENERAL_LISTENPORT=8050
     container_name: orderer1.example.com
     networks:
-    - byfn
+      - byfn
     volumes:
         - ./channel-artifacts/genesis.block:/var/hyperledger/orderer/orderer.genesis.block
         - ./crypto-config/ordererOrganizations/example.com/orderers/orderer1.example.com/msp:/var/hyperledger/orderer/msp
